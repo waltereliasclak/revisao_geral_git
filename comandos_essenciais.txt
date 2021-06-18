@@ -1,0 +1,105 @@
+----= indica a branch que estou
+==> git branch
+
+= cria uma nova branch
+==> git branch <nova_branch>
+
+= excluir branch
+==> git branch -d <nome_branch>
+
+= ir para branch
+==> git checkout <nome_branch>
+
+
+gigit config --global user.name "walter clak"
+
+git config --global user.email "walterelias10@gmail.com"
+
+git config --global core.editor subl
+
+git init => inicia o repositorio
+
+clico de vida
+- untracked  - feito mas nao ta adicionado ao git
+- unmodified - nao foi modificado mas ja existe
+- modified   - foi modificado mas ja existe
+- staged     - preparado para commit
+
+git checkout -b feature/ScriptXXXXX
+
+git pull                   => Quando algo estiver diferente no nosso repositório remoto (no servidor), 
+                              podemos baixar para a nossa máquina com o comando pull.
+git fetch                  => baixar todos os commits do repositório remoto sem afetar o seu código local
+git add "arquivo"          => ADICIONAR O ARQUIVO
+git commit -m "comentario" => 
+git push                   => empurra pro servidor
+ssh sistemas@10.116.255.111
+vo pr amasty
+
+git checkout master
+git pull
+
+git diff                        => VER O QUE FOI ALTERADO
+git clone                       => "baixa um projeto"
+
+git push -f origin master     => FORÇA o commit
+
+git rm nome_do_arquivo_ou_pasta => Deletando arquivo ou pasta com Git
+
+git add "arquivo"
+
+git commit -m "descrição"
+
+git log
+git log --author="nome"
+git shortlog -> mostra a pes	
+git shortlog -sn
+git log --graph
+git show 3d6430ed247ea61b57157566d9f703c8074e9c8 "linha de codigo q foi inserido"
+
+git diff ver o que foi alterado antes de commitar
+git diff -name-only "mostrar apenas os arquivos alterados"
+
+git checkout -b testing
+git checkout arquivo.txt "desfazer a alteração" 
+
+- apagando branch
+git branch -D testing
+
+
+git reset HEAD readme.md "tirar da fila do staged"
+
+volta os commits
+git reset --soft
+git reset --mixed
+git reset --hard "ignora o commit q foi enviado"
+
+gerar chave
+git remote add origin git@github.com:waltereliasclak/parte_1.git "ligar repositorio"
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+git push -u origin master
+
+-- quando der erro --
+touch .gitignore
+git add .gitignore
+git commit -m "gitignore file"
+git push -u origin master
+
+
+
+git pull =>atualizar o repositório local com as mudanças do repositório externo
+git push -u origin master => enviar modificações do repositório local para o repositório externo
+
+
+https://www.vivaolinux.com.br/dica/Git-pull-commit-your-changes-or-stash-them-before-you-merge-Resolvido
+git stash push --include-untracked
+
+
+
+
+
+
+
+
+
